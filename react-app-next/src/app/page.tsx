@@ -38,7 +38,7 @@ export default function Home() {
 
   console.log(result);
 
-  const handleChangeInput = (event: React.ChangeEvent<HTMLButtonElement>) => {
+  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTodohuken(event.target.value);
   };
 
@@ -58,11 +58,7 @@ export default function Home() {
 
   return (
     <div>
-      <input
-        type='text'
-        value={todohuken}
-        onChange={() => handleChangeInput(event)}
-      />
+      <input type='text' value={todohuken} onChange={handleChangeInput} />
       <button onClick={() => addUser()}>追加する</button>
       {narimoto.map((n) => {
         return <div key={n.id}>{n.address}</div>;
