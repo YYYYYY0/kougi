@@ -1,1 +1,1 @@
-# kougi
+# 講義NEXT.JS
